@@ -1,0 +1,16 @@
+.services-img {
+ width: 40px;
+ height: 40px;
+}
+
+.width {
+ width: 100px;
+ height: 100px;
+}
+
+/* @media screen and (max-width:400px){
+    .services-img {
+        width: 20px;
+        height: 20px;
+       }
+} */

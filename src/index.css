@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+
+}
+
+body {
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  background-color: #6C63FF;
+}
+
+.btn-primary:hover {
+  color: #FFFFFF;
+  background-color: #313049;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,64 @@
+
+.button-area{
+    width: 60%;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.moneySection{
+    width: 60% ;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.hideSendAndReceivedMoney{
+    display: none;
+}
+.showSendAndReceivedMoney{
+    display: block;
+}
+
+.addMoneyColor{
+    color: green;
+}
+.sendMoneyColor{
+    color: rgb(219, 25, 138);
+}
+
+  /* pagination ------------ */
+  .pagination .selected{
+    background: rgb(104, 33, 226);
+    color: #fff;
+  }
+
+@media screen and (max-width:400px) {
+
+    .button-area {
+        width: 100%;
+    }
+    .button-area span {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .moneySection{
+        width: 100% ;
+        
+
+    }
+    .fontSize ol li{
+        font-size: 10px;
+        padding: 0;
+    }
+    .fontSizeAllStatement ol li{
+        font-size: 8px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
