@@ -11,7 +11,7 @@ const useToken = user => {
         const runningUser = { email: email };
         if (email) {
 
-            fetch(`http://localhost:4000/user/${email}`, {
+            fetch(`https://poyshapay-server-mongoose-ashraf.vercel.app/user/${email}`, {
                 method: 'PUT',
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(runningUser)

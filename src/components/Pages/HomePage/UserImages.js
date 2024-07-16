@@ -5,7 +5,7 @@ import UserImage from './UserImage';
 const UserImages = () => {
     const [userImages, setUserImage] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/userimage', {
+        fetch('https://poyshapay-server-mongoose-ashraf.vercel.app/userimage', {
             method: 'GET',
 
         })

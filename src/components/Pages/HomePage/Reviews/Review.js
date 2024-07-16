@@ -8,7 +8,7 @@ const Review = () => {
 
 
   useEffect(() => {
-    const url = 'http://localhost:4000/addReview';
+    const url = 'https://poyshapay-server-mongoose-ashraf.vercel.app/addReview';
     fetch(url)
       .then(res => res.json())
       .then(data => {

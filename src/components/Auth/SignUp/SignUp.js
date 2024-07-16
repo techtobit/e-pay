@@ -47,7 +47,7 @@ const SignUp = () => {
 
       setaddUser(newData)
 
-      const url = `http://localhost:4000/addUser`;
+      const url = `https://poyshapay-server-mongoose-ashraf.vercel.app/addUser`;
       // add by ashraf
       axios.post(url, newData)
         .then(response => {
@@ -74,7 +74,7 @@ const SignUp = () => {
     if (user) {
       async function getToken() {
         const email = user.email;
-        const { data } = await axios.post('https://localhost:400/login', { email });
+        const { data } = await axios.post('https://poyshapay-server-mongoose-ashraf.vercel.app/login', { email });
         localStorage.setItem('AccessToken', data);
 
         navigate(from, { replace: true });

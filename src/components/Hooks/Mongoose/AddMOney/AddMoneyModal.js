@@ -8,7 +8,7 @@ const AddMoneyModal = () => {
 
  useEffect(() => {
   const fetchAddMoney = async () => {
-   const response = await fetch('http://localhost:4000/dashboard')
+   const response = await fetch('https://poyshapay-server-mongoose-ashraf.vercel.app/dashboard')
    const json = await response.json()
 
    if (response.ok) {

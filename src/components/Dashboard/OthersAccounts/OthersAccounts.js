@@ -20,7 +20,7 @@ const OthersAccounts = () => {
       origin: data.origin,
     }
     console.log(accountData);
-    axios.put(`http://localhost:4000/addBankAccount/${userId}`, accountData)
+    axios.put(`https://poyshapay-server-mongoose-ashraf.vercel.app/addBankAccount/${userId}`, accountData)
       .then(response => {
         console.log(response);
         toast.success('successfully new Account added');

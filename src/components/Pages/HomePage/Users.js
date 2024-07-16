@@ -5,7 +5,7 @@ import User from './User';
 const Users = () => {
     const [users, setUsers] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/user', {
+        fetch('https://poyshapay-server-mongoose-ashraf.vercel.app/user', {
             method: 'GET',
 
         })

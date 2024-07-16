@@ -5,7 +5,7 @@ const Statement = () => {
     const [allStatement, setAllStatement] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:4000/transactionStatement`;
+        const url = `https://poyshapay-server-mongoose-ashraf.vercel.app/transactionStatement`;
         fetch(url)
             .then(res => res.json())
             .then(data => {

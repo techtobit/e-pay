@@ -18,7 +18,7 @@ const ViewAllTransaction = () => {
   const [allTransActionData, setAllTransActionData] = useState(false);
 
   useEffect(() => {
-    const url = `http://localhost:4000/transactionStatement?activeNumber=${activeStatement}&showQuantity=${showQuantity}`;
+    const url = `https://poyshapay-server-mongoose-ashraf.vercel.app/transactionStatement?activeNumber=${activeStatement}&showQuantity=${showQuantity}`;
     fetch(url)
       .then(res => res.json())
       .then(data => {
@@ -27,7 +27,7 @@ const ViewAllTransaction = () => {
   }, [activeStatement, showQuantity]);
 
   useEffect(() => {
-    const url = `http://localhost:4000/statementCount`;
+    const url = `https://poyshapay-server-mongoose-ashraf.vercel.app/statementCount`;
     fetch(url)
       .then(res => res.json())
       .then(data => {
@@ -42,7 +42,7 @@ const ViewAllTransaction = () => {
 
 
   useEffect(() => {
-    const addMoneyUrl = `http://localhost:4000/addMoneyTransactions?activeNumber=${activeStatement}&showQuantity=${showQuantity}`
+    const addMoneyUrl = `https://poyshapay-server-mongoose-ashraf.vercel.app/addMoneyTransactions?activeNumber=${activeStatement}&showQuantity=${showQuantity}`
 
     fetch(addMoneyUrl)
       .then(res => res.json())
@@ -51,7 +51,7 @@ const ViewAllTransaction = () => {
 
 
   useEffect(() => {
-    const url = `http://localhost:4000/addMoneyStatementCount`;
+    const url = `https://poyshapay-server-mongoose-ashraf.vercel.app/addMoneyStatementCount`;
     fetch(url)
       .then(res => res.json())
       .then(data => {
@@ -67,7 +67,7 @@ const ViewAllTransaction = () => {
   // ------------------------------------------
 
   useEffect(() => {
-    const sendMoneyUrl = `http://localhost:4000/sendMoney?activeNumber=${activeStatement}&showQuantity=${showQuantity}`
+    const sendMoneyUrl = `https://poyshapay-server-mongoose-ashraf.vercel.app/sendMoney?activeNumber=${activeStatement}&showQuantity=${showQuantity}`
 
     fetch(sendMoneyUrl)
       .then(res => res.json())
@@ -77,7 +77,7 @@ const ViewAllTransaction = () => {
 
 
   useEffect(() => {
-    const url = `http://localhost:4000/sendMoneyStatementCount`;
+    const url = `https://poyshapay-server-mongoose-ashraf.vercel.app/sendMoneyStatementCount`;
     fetch(url)
       .then(res => res.json())
       .then(data => {

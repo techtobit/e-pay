@@ -18,7 +18,7 @@ const DBUserData = () => {
 
 
   // const { data: userDataQuery } = useQuery('userData',
-  //   axios.get(`http://localhost:4000/user/${userEmail}`)
+  //   axios.get(`https://poyshapay-server-mongoose-ashraf.vercel.app/user/${userEmail}`)
   //     .then(response => {
   //       if (response?.error) {
   //         toast.error(`${response?.error}`)
@@ -34,7 +34,7 @@ const DBUserData = () => {
 
   useEffect(() => {
     if (userEmail) {
-      axios.get(`http://localhost:4000/user/${userEmail}`)
+      axios.get(`https://poyshapay-server-mongoose-ashraf.vercel.app/user/${userEmail}`)
         .then(response => {
           if (response?.error) {
             toast.error(`${response?.error}`)

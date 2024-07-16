@@ -4,7 +4,7 @@ const Qus = () => {
     const [questions, setQuestions] = useState([])
     console.log(questions);
     useEffect(() => {
-        fetch("http://localhost:4000/faq")
+        fetch("https://poyshapay-server-mongoose-ashraf.vercel.app/faq")
             .then(res => res.json())
             .then(data => setQuestions(data))
     }, [])

@@ -24,7 +24,7 @@ const ImageUpload = () => {
                         img: img
                     }
 
-                    fetch('http://localhost:4000/userimage', {
+                    fetch('https://poyshapay-server-mongoose-ashraf.vercel.app/userimage', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

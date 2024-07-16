@@ -33,7 +33,7 @@ const DisplayAccounts = ({ accounts }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:4000/addedAccount/${id}`;
+            const url = `https://poyshapay-server-mongoose-ashraf.vercel.app/addedAccount/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

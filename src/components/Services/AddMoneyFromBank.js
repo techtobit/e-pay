@@ -29,7 +29,7 @@ const AddMoneyFromBank = () => {
 
     const onSubmit = (data) => {
         console.log(data);
-        const url = `http://localhost:4000/addMoney/addMoneyBank/${id}`;
+        const url = `https://poyshapay-server-mongoose-ashraf.vercel.app/addMoney/addMoneyBank/${id}`;
         axios.put(url, data)
             .then(response => {
                 console.log(response);

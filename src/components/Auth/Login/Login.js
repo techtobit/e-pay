@@ -37,7 +37,7 @@ const Login = () => {
     //     if (user) {
     //         async function getToken() {
     //             const email = user.email;
-    //             const { data } = await axios.post('http://localhost:4000/login', { email });
+    //             const { data } = await axios.post('https://poyshapay-server-mongoose-ashraf.vercel.app/login', { email });
     //             localStorage.setItem('AccessToken', data);
     //             navigate(from, { replace: true });
     //         }

@@ -23,7 +23,7 @@ const SendMoney = () => {
 
     const newData = { ...data, sendTo: sendTo }
     // add by ashraf
-    const url = `http://localhost:4000/sendMoney/${userId}`;
+    const url = `https://poyshapay-server-mongoose-ashraf.vercel.app/sendMoney/${userId}`;
     axios.put(url, newData)
       .then(response => {
         console.log(response);

@@ -35,7 +35,7 @@ const AddMoneyModal = ({ banks, setBanks }) => {
 
 
 
-    fetch(`http://localhost:4000/addMoney/${userId}`, {
+    fetch(`https://poyshapay-server-mongoose-ashraf.vercel.app/addMoney/${userId}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json'
@@ -52,7 +52,7 @@ const AddMoneyModal = ({ banks, setBanks }) => {
         });
       })
 
-    fetch('http://localhost:4000/transaction_history', {
+    fetch('https://poyshapay-server-mongoose-ashraf.vercel.app/transaction_history', {
 
       method: 'POST',
       headers: {
